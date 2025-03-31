@@ -74,3 +74,13 @@ nav ul li a:hover {
         height: auto;
     }
 }
+
+footer {
+    background-color: #005599;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

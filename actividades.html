@@ -20,7 +20,9 @@
         <h1>Actividades interactivas</h1>
     </header>
 
-    <div class="container">
+    <p><h1>Refuerza tu aprendizaje con estas actividades que he creado para ti. Que el deseo por aprender te siga guiando a nuevos conocimientos.</h1></p>
+    <p><h2>MUCHA SUERTE</h2></p>
+    <div class="actividad-1">
         <h2>Cuestionario: Introducción a la Ingeniería de Sistemas</h2>
         <div id="quiz">
             <div class="question">
@@ -42,7 +44,7 @@
         </div>
     </div>
     
-    <div class="container">
+    <div class="actividad-2">
         <h2>Empareja los conceptos con sus definiciones</h2>
         <div class="drag-container">
             <div class="column" id="concepts">
@@ -101,7 +103,75 @@
             });
         });
     </script>
+
+<div class="actividad 3">
+        <h2>Completa los espacios en blanco con la palabra correcta.</h2>
+        
+        <div class="definicion">
+            <p>1. Este componente de un sistema de información incluye dispositivos físicos como computadoras, servidores y equipos de red.</p>
+            <input type="text" id="respuesta-1" placeholder="Escribe tu respuesta aquí">
+        </div>
+        
+        <div class="definicion">
+            <p>2. Este componente incluye programas y aplicaciones que controlan el hardware y procesan los datos dentro de un sistema de información.</p>
+            <input type="text" id="respuesta-2" placeholder="Escribe tu respuesta aquí">
+        </div>
+    
+        <div class="definicion">
+            <p>3. Este componente es la información que el sistema procesa, almacena y utiliza para la toma de decisiones.</p>
+            <input type="text" id="respuesta-3" placeholder="Escribe tu respuesta aquí">
+        </div>
+    
+        <div class="definicion">
+            <p>4. Este componente está compuesto por los usuarios, administradores y profesionales que interactúan con el sistema, proporcionan datos y toman decisiones basadas en la información.</p>
+            <input type="text" id="respuesta-4" placeholder="Escribe tu respuesta aquí">
+        </div>
+    
+        <div class="definicion">
+            <p>5. Este componente comprende procedimientos, reglas y actividades que definen cómo se maneja y procesa la información dentro del sistema.</p>
+            <input type="text" id="respuesta-5" placeholder="Escribe tu respuesta aquí">
+        </div>
+    
+        <button onclick="verificarRespuestas()">Verificar Respuestas</button>
+        <p id="resultado" class="hidden"></p>
+    </div>
+    
+    <script>
+        function verificarRespuestas() {
+            let respuestasCorrectas = 0;
+            const respuestas = {
+                "respuesta-1": "Hardware",
+                "respuesta-2": "Software",
+                "respuesta-3": "Datos",
+                "respuesta-4": "Personas",
+                "respuesta-5": "Procesos"
+            };
+            
+            // Verificar las respuestas
+            Object.keys(respuestas).forEach(id => {
+                const respuestaUsuario = document.getElementById(id).value.trim();
+                if (respuestaUsuario.toLowerCase() === respuestas[id].toLowerCase()) {
+                    respuestasCorrectas++;
+                }
+            });
+            
+            // Mostrar el resultado
+            let resultado = document.getElementById("resultado");
+            if (respuestasCorrectas === 5) {
+                resultado.textContent = "¡Respuestas correctas! 🎉";
+                resultado.style.color = "green";
+            } else {
+                resultado.textContent = `Tienes ${respuestasCorrectas} respuesta(s) correcta(s). Intenta de nuevo.`;
+                resultado.style.color = "red";
+            }
+            resultado.classList.remove("hidden");
+        }
+    </script>
+    
 </head>
 
+<footer>
+    <p>&copy; 2025 OVI - Ingeniería de Sistemas</p>
+</footer>
 <body>
 </html>

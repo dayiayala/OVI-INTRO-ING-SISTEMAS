@@ -61,6 +61,17 @@ section p {
     margin: 10px 0;
 }
 
+footer {
+    background-color: #005599;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
 @media (max-width: 600px) {
     section {
         width: 90%;

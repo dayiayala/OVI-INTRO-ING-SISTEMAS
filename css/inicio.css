@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #0077b6;
+    background-color: #62ace0;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -38,12 +38,13 @@ nav ul li a:hover {
     background-color: #0096c7;
     border-radius: 5px;
 }
+
 footer {
-    background-color: #005599;
+    background-color: #62ace0;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    padding: 10px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }

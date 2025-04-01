@@ -37,15 +37,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #005599;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 
 .container {
     max-width: 800px;
@@ -228,4 +219,13 @@ button:hover {
     .concept, .definition {
         padding: 8px;
     }
+}
+footer {
+    background-color: #62ace0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
